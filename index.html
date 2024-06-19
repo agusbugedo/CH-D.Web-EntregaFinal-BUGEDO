@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fondoNavBar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">IMAGINE DRAGONS</a>
+              <a class="navbarID navbar-brand" href="#">IMAGINE DRAGONS</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,41 +41,48 @@
     <!--Contenido-->
     <main class="container-fluid">
         <div class="row justify-content-center">
-            <img src="./assets/imagine-dragons1.jpg" alt="Portada">
+            <img class="imgPortada" src="./assets/imagine-dragons1.jpg" alt="Portada">
         </div>
         <section class="row justify-content-center">
             <div class="col-10 justify-content-center">
                 <br>
+                <br>
                 <h2>IMAGINE DRAGONS</h2> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. 
-                    Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris 
-                    molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. 
-                    Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed
-                     felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. 
-                     Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis
-                     ornare accumsan, blandit sed diam.</p>
+                  <div class="textoContenido">
+                    <p>Imagine Dragons es una banda estadounidense de pop rock originaria de Las Vegas, Nevada. Está compuesta por Dan Reynolds (vocalista), Wayne Sermon (guitarrista), Ben McKee (bajista) y Daniel Platzman (baterista). Ganó el reconocimiento mundial con el lanzamiento de su álbum de estudio debut «Night Visions» (2012), y con su canción «It's Time».</p>
+                    <p>Billboard los colocó en la cima de su lista de popularidad del 2013 "Year In Rock", y los llamó "la banda revelación del 2013". La revista Rolling Stone llamó a su canción «Radioactive» del álbum «Night Visions» "el mayor éxito rock del año". Mientras que MTV los llamó "la banda revelación del año". «Radioactive» es la segunda canción con más semanas dentro del Billboard Hot 100 en la historia, con un total de 87 semanas.</p>
+                    <p>«Night Visions» alcanzó su punto máximo en el número dos de la lista semanal Billboard 200 y en UK Albums Chart. Su segundo álbum de estudio, «Smoke + Mirrors», alcanzó el número uno en los Estados Unidos, Canadá y el Reino Unido.</p>                   
+                    <p>Imagine Dragons ganó dos American Music Awards por "Artista Alternativo Favorito", un premio Grammy a la mejor interpretación rock, cinco premios Billboard Music Awards y un premio World Music Award. En mayo de 2014, la banda obtuvo un total de catorce nominaciones en diferentes categorías en los Billboard Music Awards, incluyendo "Top Artist of the Year" y un Milestone Award, el cual reconoce la innovación y la creatividad de varios artistas a través de diferentes géneros.</p>
+                    <p>Hasta enero de 2017, Imagine Dragons había vendido 9 millones de copias de sus álbumes, y 27 millones en sencillos.</p>
+                  </div>  
             </div>
         </section>
     </main>
     <!--Pie de pagina-->
-    <footer>
-        <h3>Suscribite a nuestro newsletter y sé el primero en enterarte de las novedades!</h3>
-        <form action="">
-            <label for="emailsuscr">Ingresa tu email</label>
-            <br>
-            <input type="email" name="Email" id="emailsuscr">
-            <br>
-        </form>
-        <div>
-            <img src="" alt="Instagram">
-            <img src="" alt="X">
-            <img src="" alt="Youtube">
-            <img src="" alt="Apple Music">
-            <img src="" alt="Spotify">
-            <img src="" alt="Facebook">
+    <footer class="pieDePagina">
+      <div class="row align-items-start">
+        <div class="suscripcion col-6">
+          <h3>Suscribite a nuestro newsletter y sé el primero en enterarte de las novedades!</h3>
         </div>
-        <br>
-        <br>
+      </div>
+      <form class="row align-items-start">
+        <div class="suscripcion col-4">
+          <label for="email" class="form-label">Ingresa tu email</label>
+          <input type="password" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Tu email">
+        </div>
+      </form>
+      <div class="rrss">
+        <div class="container text-center">
+          <img src="" alt="Instagram">
+          <img src="" alt="X">
+          <img src="" alt="Youtube">
+          <img src="" alt="Apple Music">
+          <img src="" alt="Spotify">
+          <img src="" alt="Facebook">
+        </div>
+      </div>
+      <br>
+      <br>
         <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2YqUuI?theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
