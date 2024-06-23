@@ -1,0 +1,28 @@
+.textoContacto {
+  margin-top: 20px;
+}
+
+form {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botonForm {
+  background-color: cadetblue;
+  color: black;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.form-label {
+  font-size: 1.5rem;
+}
+
+.subtexto {
+  font-size: 1.1rem;
+}
+
+.form-control {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=contacto.css.map */
