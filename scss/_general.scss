@@ -7,26 +7,30 @@ html{
     font-size: 62.5%;
 }
 
+main{
+    padding-bottom: 20px;
+    background-color: $colorFondos;
+}
+
 header{
-    background-color: $colorPrimario;
+    background-image: linear-gradient(-20deg, $colorPrimario 0%, $colorSecundario 100%);
     color: $colorTextos;
     padding: 10px;
+    position: sticky;
+    top: 1px;
     nav{
         margin-left: 40px;
-        div{
-            a{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-weight: bold;
-            }    
+        div{   
             div{
                 margin-left: 30px;
                 ul{
                     list-style-type: none;
                     li{
                         a{
-                            font-family: Arial, Helvetica, sans-serif;               
+                            font-family:$fuenteMenu;               
                             text-decoration: none;
-                            margin-left: 20px;
+                            margin-left: 20%;
+                            margin-right: 20px;
                         }     
                     }        
                 }    
@@ -35,32 +39,108 @@ header{
     }
 }
 
-.navbarID{
-    font-size: 2rem;
+header nav div div ul li a:hover{
+    text-decoration: underline;
 }
-.collapse{
+
+.container-fluid{
+    --bs-gutter-x: none;
+}
+
+.imgLogo{
+    width: 120px;
+}
+
+.infoMenu{
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 footer{
-    background-color: black;
-    .suscripcion{
+    @extend%flexcolumn;
+    justify-content: center;
+    background-image: linear-gradient(20deg, $colorPrimario 0%, $colorSecundario 100%);
+    .piePagina{
+        @extend%flexrow;
+        justify-content: space-evenly;
         margin-top: 40px;
-        margin-left: 50px;
-        color: white;
+        color: $colorTextos;
+        .suscripcion{
+            width: 40%;
+            label{
+                margin: 10px 0px;
+            }
+            input{
+                width: 300px;
+            }
+        }
+        .menuFooter{
+            @extend%flexrow;
+            justify-content: center;
+            .inicioFooter{
+                @extend%flexcolumn;
+                justify-content: left;
+                a{
+                    font-family: $fuenteTitulos;
+                    font-size: 1.5rem;
+                    color: $colorTextos;
+                    text-decoration: none;
+                    ul{
+                        @extend%flexcolumn;
+                        justify-content: center;
+                        align-items: left;
+                        li a{
+                            text-align: left;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }    
+        }
     }
     .rrss{
-        margin-top: 30px;
+        margin: 20px 0px;
+        @extend%flexcolumn;
+        justify-content: center;    
+        div img{
+            width: 25px;
+            margin: 20px;
+            margin-bottom: 0px;
+        }
     }
 }
 
+.botonSuscr{
+    margin-top: 15px;
+    background-color: $colorFondos;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: $fuenteMenu;
+    width: 110px;
+    height: 30px;
+}
+
 h1{
-    font-family: $fuenteTitulos, sans-serif;
+    font-family: $fuenteTitulos;
+    font-size: 2.5rem;
     margin-top: 25px;
 }
 
 p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuenteTextos;
     font-size: 1.5rem;
+    text-align: justify;
+}
+
+h2{
+    font-family: $fuenteTextos;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+h3{
+    font-family: $fuenteTitulos;
+    font-weight: bold;
+    font-size: 1.9rem;
 }

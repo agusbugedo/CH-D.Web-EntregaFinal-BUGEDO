@@ -1,0 +1,44 @@
+.infoTour{
+    @extend%flexcolumn;
+    align-items: center;
+}
+
+.recuadroTour{
+    width: 80%;
+    height: 100px;
+    border: 2px solid $colorSecundario;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.seccionTour{
+    @extend%flexrow;
+    justify-content: space-around;
+    font-family: $fuenteMenu;
+    font-size: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+    .fecha{
+        font-weight: bold;
+    }
+    .ticket{
+        background-color: $colorAcento;
+        border: $colorAcento;
+        color: $colorTextos;
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: $fuenteMenu;
+        margin-right: 30px;
+        width: 100px;
+        height: 40px;
+    }
+}
+
+
+
+.ticket:hover{
+    background-color: $colorTerciario;
+}

@@ -1,7 +1,36 @@
 .textoHistoria{
-    width: 50%;
+    width: 45%;
     margin-top: 20px;
 }
-.imgHistoria{
-    width: 30%;
+
+.imgHistoria1{
+    width: 45%;
+    height: 45%;
+    margin-top: 30px;
+    margin-left: 50px;
 }
+.imgHistoria2{
+    width: 45%;
+    height: 45%;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.tituloHistoria{
+    margin-bottom: 10px;
+}
+.loom{
+    @extend%flexrow;
+    justify-content: center;
+    .textoLoom{
+    align-items: center;
+    width: 60%;
+    background-color: $colorTerciario;
+    padding: 30px;
+    border-radius: 10px;
+    border-style: double;
+    span{
+        font-weight: bold;
+    }
+    }
+}
+

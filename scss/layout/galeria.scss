@@ -1,3 +1,31 @@
-.imgGaleria{
-    width: 30rem;
+.galeriaFotos{
+    @extend%flexrow;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    img{
+        width: 30%;
+        height: 30%;
+        margin: 15px;
+        margin-bottom: 20px;
+        transition: all 500ms;        
+    }
+}
+
+.galeriaFotos img:hover{
+    width: 31%;
+    height: 31%;
+}
+
+.galeriaVideos{
+    @extend%flexrow;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    iframe{
+        display: inline;
+        margin: 10px;
+    }
 }

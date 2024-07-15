@@ -1,5 +1,18 @@
-.imgGaleria {
-  width: 30rem;
-}
+/* Error: The target selector was not found.
+ * Use "@extend %flexrow !optional" to avoid this error.
+ *   ,
+ * 2 |     @extend%flexrow;
+ *   |     ^^^^^^^^^^^^^^^
+ *   '
+ *   scss\layout\galeria.scss 2:5  root stylesheet */
 
-/*# sourceMappingURL=galeria.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend %flexrow !optional" to avoid this error.\a   \2577 \a 2 \2502      @extend%flexrow;\d\a   \2502      ^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\galeria.scss 2:5  root stylesheet';
+}

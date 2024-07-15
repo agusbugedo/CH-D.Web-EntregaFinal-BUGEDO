@@ -1,28 +1,17 @@
-.textoContacto {
-  margin-top: 20px;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 |     font-family: $fuenteTextos;
+ *   |                  ^^^^^^^^^^^^^
+ *   '
+ *   scss\layout\contacto.scss 6:18  root stylesheet */
 
-form {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      font-family: $fuenteTextos;\d\a   \2502                   ^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\contacto.scss 6:18  root stylesheet";
 }
-
-.botonForm {
-  background-color: cadetblue;
-  color: black;
-  font-weight: bold;
-  font-size: 1.7rem;
-}
-
-.form-label {
-  font-size: 1.5rem;
-}
-
-.subtexto {
-  font-size: 1.1rem;
-}
-
-.form-control {
-  font-size: 12px;
-}
-
-/*# sourceMappingURL=contacto.css.map */

@@ -1,6 +1,29 @@
-$colorPrimario: #ceb5c2;
-$colorSecundario: #76b39c;
-$colorAcento: #a39eb8;
+$colorPrimario: #706575;
+$colorSecundario: #9bc4b7;
+$colorTerciario: #ceb5c2da;
+$colorFondos: #f2e6f5;
+$colorAcento: #76b39c;
 $colorTextos: #000000;
-$fuenteTitulos: "Segoe UI";
-$fuenteTextos: "Tahoma";
+$fuenteTitulos: "Segoe UI", sans-serif;
+$fuenteTextos: "Roboto", sans-serif;
+$fuenteMenu: "Century Gothic", sans-serif;
+
+//Extend
+%flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+//Mixin
+@mixin flex($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
