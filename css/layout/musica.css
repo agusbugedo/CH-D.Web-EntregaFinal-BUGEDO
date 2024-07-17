@@ -1,9 +1,17 @@
-.widthCard {
-  width: 30rem;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 45px;
-  margin-left: 45px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 16 |     border: 2px solid $colorTerciario;
+ *    |                       ^^^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\musica.scss 16:23  root stylesheet */
 
-/*# sourceMappingURL=musica.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 16 \2502      border: 2px solid $colorTerciario;\d\a    \2502                        ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\musica.scss 16:23  root stylesheet";
+}

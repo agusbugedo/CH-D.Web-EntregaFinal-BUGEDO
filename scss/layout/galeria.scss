@@ -29,3 +29,23 @@
         margin: 10px;
     }
 }
+
+@media(max-width:768px){
+    .galeriaFotos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            width: 80%;
+            height: 80%;
+            transition: all 500ms;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .galeriaFotos img:hover{
+        width: 81%;
+        height: 81%;
+    }
+}

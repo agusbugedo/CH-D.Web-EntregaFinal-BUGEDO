@@ -37,8 +37,38 @@
     }
 }
 
-
-
 .ticket:hover{
     background-color: $colorTerciario;
+}
+
+@media(max-width:768px){
+    .seccionTour{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        .fecha{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        .ticket{
+            margin: 0px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .recuadroTour{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 95%;
+        height: 140px;
+        padding-top: 15px;
+        ul{
+            padding: 0px;
+            margin: 0px;
+        }
+    }
 }

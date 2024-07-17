@@ -47,6 +47,10 @@ header nav div div ul li a:hover{
     --bs-gutter-x: none;
 }
 
+.sinBorde{
+    --bs-gutter-x: 0px;
+}
+
 .imgLogo{
     width: 120px;
 }
@@ -69,6 +73,7 @@ footer{
             width: 40%;
             label{
                 margin: 10px 0px;
+                width: 250px;
             }
             input{
                 width: 300px;
@@ -143,4 +148,10 @@ h3{
     font-family: $fuenteTitulos;
     font-weight: bold;
     font-size: 1.9rem;
+}
+
+@media(max-width:768px){
+    .noMobile{
+        display: none;
+    }
 }

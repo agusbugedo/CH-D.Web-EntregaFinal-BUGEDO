@@ -2,16 +2,37 @@
     margin-top: 20px;
 }
 
-form{
+.formContacto{
     font-family: $fuenteTextos;
+    @extend%flexcolumn;
+    justify-content: justify;
+    align-items: center;
+    .nombre{
+        margin-bottom: 20px;
+    }
     .form-label{
+        font-family: $fuenteTextos;
         font-size: 1.5rem;
     }
+    .email{
+        margin-bottom: 20px;
+    }
+    input{
+        width: 600px;
+    }
     .subtexto{
+        font-family: $fuenteTextos;
         font-size: 1.1rem;
     }
     .form-control{
+        font-family: $fuenteTextos;
         font-size: 12px;
+    }
+    .mensaje{
+        margin-bottom: 20px;
+    }
+    textarea{
+        width: 600px;
     }
     .botonForm{
         background-color: $colorAcento;
@@ -21,5 +42,14 @@ form{
         font-family: $fuenteMenu;
         width: 120px;
         height: 40px;
+    }
+}
+
+@media(max-width:768px){
+    .formContacto input{
+        width: 250px;
+    }
+    .formContacto textarea{
+        width: 250px;
     }
 }

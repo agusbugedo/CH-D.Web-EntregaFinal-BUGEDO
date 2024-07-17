@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 27 |     background-color: $colorTerciario;
+ * 28 |     background-color: $colorTerciario;
  *    |                       ^^^^^^^^^^^^^^^
  *    '
- *   scss\layout\historia.scss 27:23  root stylesheet */
+ *   scss\layout\historia.scss 28:23  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 27 \2502      background-color: $colorTerciario;\d\a    \2502                        ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\historia.scss 27:23  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 28 \2502      background-color: $colorTerciario;\d\a    \2502                        ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\historia.scss 28:23  root stylesheet";
 }
