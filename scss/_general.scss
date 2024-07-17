@@ -155,3 +155,15 @@ h3{
         display: none;
     }
 }
+
+@media(max-width:768px){
+    .suscripcion input{
+        width: 200px;
+    }
+}
+
+@media(max-width:768px){
+    nav{
+        margin-left: 20px;
+    }
+}
